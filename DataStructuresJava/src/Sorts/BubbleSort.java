@@ -21,7 +21,7 @@ class BubbleSort implements SortAlgorithm {
         for (int i = 0, size = array.length; i < size - 1; ++i) {
             boolean swapped = false;
             for (int j = 0; j < size - 1 - i; ++j) {
-                swapped = less(array[j], array[j + 1]) && swap(array, j, j + 1);
+                swapped = less(array[j], array[j + 1]) && swap(array, j, j +1);
             }
             if (!swapped) {
                 break;
@@ -34,7 +34,7 @@ class BubbleSort implements SortAlgorithm {
     public static void main(String[] args) {
 
         // Integer Input
-        Integer[] integers = {4, 23, 6, 78, 1, 54, 231, 9, 12};
+        Integer[] integers = {5, 23, 6, 78, 1, 54, 231, 9, 12};
         BubbleSort bubbleSort = new BubbleSort();
         bubbleSort.sort(integers);
 
